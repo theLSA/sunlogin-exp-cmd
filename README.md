@@ -1,4 +1,7 @@
-# sunlogin-exp-cmd：C++命令行版向日葵（sunlogin）RCE漏洞检测工具
+# sunlogin-exp-cmd：命令行版向日葵RCE漏洞利用工具
+
+
+GUI版本：[https://github.com/theLSA/sunlogin-exp-gui](https://github.com/theLSA/sunlogin-exp-gui)
 
 
 
