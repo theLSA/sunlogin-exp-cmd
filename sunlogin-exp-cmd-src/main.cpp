@@ -217,7 +217,7 @@ string get_cmd_result(char* cmd)
 }
 
 
-string get_sunlogin_custon_last_log_file()
+string get_sunlogin_custom_last_log_file()
 {
 
 	string cmdResult = "";
@@ -601,7 +601,7 @@ int main(int argc, char* argv[])
 
         if(serviceLogFiles.empty()){
                 cout << "serviceLogFiles return empty too , now try to find custom sunlogin log path......" << endl;
-                string customLogPath = get_sunlogin_custon_last_log_file();
+                string customLogPath = get_sunlogin_custom_last_log_file();
 
                 if(customLogPath!=""){
                     lastCreateLogFile = customLogPath;
